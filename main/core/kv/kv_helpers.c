@@ -902,6 +902,192 @@ void set_reboot(int value) {
 }
 
 
+static SemaphoreHandle_t _mutex_box_0_sht21_temp_c; // TODO check RAM weight of creating so many semaphores :/
+static bool _box_0_sht21_temp_c_changed = true;
+
+void reset_box_0_sht21_temp_c_changed() {
+  xSemaphoreTake(_mutex_box_0_sht21_temp_c, 0);
+  _box_0_sht21_temp_c_changed = false;
+  xSemaphoreGive(_mutex_box_0_sht21_temp_c);
+}
+
+bool is_box_0_sht21_temp_c_changed() {
+  xSemaphoreTake(_mutex_box_0_sht21_temp_c, 0);
+  bool v = _box_0_sht21_temp_c_changed;
+  xSemaphoreGive(_mutex_box_0_sht21_temp_c);
+  return v;
+}
+
+
+
+int get_box_0_sht21_temp_c() {
+  return geti(BOX_0_SHT21_TEMP_C);
+}
+
+void set_box_0_sht21_temp_c(int value) {
+  if (geti(BOX_0_SHT21_TEMP_C) == value) return;
+  seti(BOX_0_SHT21_TEMP_C, value);
+  xSemaphoreTake(_mutex_box_0_sht21_temp_c, 0);
+  _box_0_sht21_temp_c_changed = true;
+  xSemaphoreGive(_mutex_box_0_sht21_temp_c);
+}
+
+
+static SemaphoreHandle_t _mutex_box_0_sht21_temp_f; // TODO check RAM weight of creating so many semaphores :/
+static bool _box_0_sht21_temp_f_changed = true;
+
+void reset_box_0_sht21_temp_f_changed() {
+  xSemaphoreTake(_mutex_box_0_sht21_temp_f, 0);
+  _box_0_sht21_temp_f_changed = false;
+  xSemaphoreGive(_mutex_box_0_sht21_temp_f);
+}
+
+bool is_box_0_sht21_temp_f_changed() {
+  xSemaphoreTake(_mutex_box_0_sht21_temp_f, 0);
+  bool v = _box_0_sht21_temp_f_changed;
+  xSemaphoreGive(_mutex_box_0_sht21_temp_f);
+  return v;
+}
+
+
+
+int get_box_0_sht21_temp_f() {
+  return geti(BOX_0_SHT21_TEMP_F);
+}
+
+void set_box_0_sht21_temp_f(int value) {
+  if (geti(BOX_0_SHT21_TEMP_F) == value) return;
+  seti(BOX_0_SHT21_TEMP_F, value);
+  xSemaphoreTake(_mutex_box_0_sht21_temp_f, 0);
+  _box_0_sht21_temp_f_changed = true;
+  xSemaphoreGive(_mutex_box_0_sht21_temp_f);
+}
+
+
+static SemaphoreHandle_t _mutex_box_0_sht21_humi; // TODO check RAM weight of creating so many semaphores :/
+static bool _box_0_sht21_humi_changed = true;
+
+void reset_box_0_sht21_humi_changed() {
+  xSemaphoreTake(_mutex_box_0_sht21_humi, 0);
+  _box_0_sht21_humi_changed = false;
+  xSemaphoreGive(_mutex_box_0_sht21_humi);
+}
+
+bool is_box_0_sht21_humi_changed() {
+  xSemaphoreTake(_mutex_box_0_sht21_humi, 0);
+  bool v = _box_0_sht21_humi_changed;
+  xSemaphoreGive(_mutex_box_0_sht21_humi);
+  return v;
+}
+
+
+
+int get_box_0_sht21_humi() {
+  return geti(BOX_0_SHT21_HUMI);
+}
+
+void set_box_0_sht21_humi(int value) {
+  if (geti(BOX_0_SHT21_HUMI) == value) return;
+  seti(BOX_0_SHT21_HUMI, value);
+  xSemaphoreTake(_mutex_box_0_sht21_humi, 0);
+  _box_0_sht21_humi_changed = true;
+  xSemaphoreGive(_mutex_box_0_sht21_humi);
+}
+
+
+static SemaphoreHandle_t _mutex_box_1_sht21_temp_c; // TODO check RAM weight of creating so many semaphores :/
+static bool _box_1_sht21_temp_c_changed = true;
+
+void reset_box_1_sht21_temp_c_changed() {
+  xSemaphoreTake(_mutex_box_1_sht21_temp_c, 0);
+  _box_1_sht21_temp_c_changed = false;
+  xSemaphoreGive(_mutex_box_1_sht21_temp_c);
+}
+
+bool is_box_1_sht21_temp_c_changed() {
+  xSemaphoreTake(_mutex_box_1_sht21_temp_c, 0);
+  bool v = _box_1_sht21_temp_c_changed;
+  xSemaphoreGive(_mutex_box_1_sht21_temp_c);
+  return v;
+}
+
+
+
+int get_box_1_sht21_temp_c() {
+  return geti(BOX_1_SHT21_TEMP_C);
+}
+
+void set_box_1_sht21_temp_c(int value) {
+  if (geti(BOX_1_SHT21_TEMP_C) == value) return;
+  seti(BOX_1_SHT21_TEMP_C, value);
+  xSemaphoreTake(_mutex_box_1_sht21_temp_c, 0);
+  _box_1_sht21_temp_c_changed = true;
+  xSemaphoreGive(_mutex_box_1_sht21_temp_c);
+}
+
+
+static SemaphoreHandle_t _mutex_box_1_sht21_temp_f; // TODO check RAM weight of creating so many semaphores :/
+static bool _box_1_sht21_temp_f_changed = true;
+
+void reset_box_1_sht21_temp_f_changed() {
+  xSemaphoreTake(_mutex_box_1_sht21_temp_f, 0);
+  _box_1_sht21_temp_f_changed = false;
+  xSemaphoreGive(_mutex_box_1_sht21_temp_f);
+}
+
+bool is_box_1_sht21_temp_f_changed() {
+  xSemaphoreTake(_mutex_box_1_sht21_temp_f, 0);
+  bool v = _box_1_sht21_temp_f_changed;
+  xSemaphoreGive(_mutex_box_1_sht21_temp_f);
+  return v;
+}
+
+
+
+int get_box_1_sht21_temp_f() {
+  return geti(BOX_1_SHT21_TEMP_F);
+}
+
+void set_box_1_sht21_temp_f(int value) {
+  if (geti(BOX_1_SHT21_TEMP_F) == value) return;
+  seti(BOX_1_SHT21_TEMP_F, value);
+  xSemaphoreTake(_mutex_box_1_sht21_temp_f, 0);
+  _box_1_sht21_temp_f_changed = true;
+  xSemaphoreGive(_mutex_box_1_sht21_temp_f);
+}
+
+
+static SemaphoreHandle_t _mutex_box_1_sht21_humi; // TODO check RAM weight of creating so many semaphores :/
+static bool _box_1_sht21_humi_changed = true;
+
+void reset_box_1_sht21_humi_changed() {
+  xSemaphoreTake(_mutex_box_1_sht21_humi, 0);
+  _box_1_sht21_humi_changed = false;
+  xSemaphoreGive(_mutex_box_1_sht21_humi);
+}
+
+bool is_box_1_sht21_humi_changed() {
+  xSemaphoreTake(_mutex_box_1_sht21_humi, 0);
+  bool v = _box_1_sht21_humi_changed;
+  xSemaphoreGive(_mutex_box_1_sht21_humi);
+  return v;
+}
+
+
+
+int get_box_1_sht21_humi() {
+  return geti(BOX_1_SHT21_HUMI);
+}
+
+void set_box_1_sht21_humi(int value) {
+  if (geti(BOX_1_SHT21_HUMI) == value) return;
+  seti(BOX_1_SHT21_HUMI, value);
+  xSemaphoreTake(_mutex_box_1_sht21_humi, 0);
+  _box_1_sht21_humi_changed = true;
+  xSemaphoreGive(_mutex_box_1_sht21_humi);
+}
+
+
 void init_helpers() {
   _mutex_wifi_status = xSemaphoreCreateMutexStatic(&mutex_buffer);
   _mutex_wifi_ssid = xSemaphoreCreateMutexStatic(&mutex_buffer);
@@ -928,6 +1114,12 @@ void init_helpers() {
   _mutex_i2c_1_scl = xSemaphoreCreateMutexStatic(&mutex_buffer);
   _mutex_i2c_1_enabled = xSemaphoreCreateMutexStatic(&mutex_buffer);
   _mutex_reboot = xSemaphoreCreateMutexStatic(&mutex_buffer);
+  _mutex_box_0_sht21_temp_c = xSemaphoreCreateMutexStatic(&mutex_buffer);
+  _mutex_box_0_sht21_temp_f = xSemaphoreCreateMutexStatic(&mutex_buffer);
+  _mutex_box_0_sht21_humi = xSemaphoreCreateMutexStatic(&mutex_buffer);
+  _mutex_box_1_sht21_temp_c = xSemaphoreCreateMutexStatic(&mutex_buffer);
+  _mutex_box_1_sht21_temp_f = xSemaphoreCreateMutexStatic(&mutex_buffer);
+  _mutex_box_1_sht21_humi = xSemaphoreCreateMutexStatic(&mutex_buffer);
 }
 
 /*

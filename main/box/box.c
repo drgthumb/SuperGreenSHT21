@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018  SuperGreenLab <towelie@supergreenlab.com>
+ * Copyright (C) 2019  SuperGreenLab <towelie@supergreenlab.com>
  * Author: Constantin Clauzel <constantin.clauzel@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,8 +16,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "box/box.h"
+#include "box.h"
 
-void init_app() {
-  init_box();
+#include "../core/log/log.h"
+
+void init_box() {
+  ESP_LOGI(SGO_LOG_EVENT, "@BOX Initializing");
 }

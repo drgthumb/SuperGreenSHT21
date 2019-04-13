@@ -144,6 +144,30 @@ void reset_reboot_changed();
 bool is_reboot_changed();
 int get_reboot();
 void set_reboot(int value);
+void reset_box_0_sht21_temp_c_changed();
+bool is_box_0_sht21_temp_c_changed();
+int get_box_0_sht21_temp_c();
+void set_box_0_sht21_temp_c(int value);
+void reset_box_0_sht21_temp_f_changed();
+bool is_box_0_sht21_temp_f_changed();
+int get_box_0_sht21_temp_f();
+void set_box_0_sht21_temp_f(int value);
+void reset_box_0_sht21_humi_changed();
+bool is_box_0_sht21_humi_changed();
+int get_box_0_sht21_humi();
+void set_box_0_sht21_humi(int value);
+void reset_box_1_sht21_temp_c_changed();
+bool is_box_1_sht21_temp_c_changed();
+int get_box_1_sht21_temp_c();
+void set_box_1_sht21_temp_c(int value);
+void reset_box_1_sht21_temp_f_changed();
+bool is_box_1_sht21_temp_f_changed();
+int get_box_1_sht21_temp_f();
+void set_box_1_sht21_temp_f(int value);
+void reset_box_1_sht21_humi_changed();
+bool is_box_1_sht21_humi_changed();
+int get_box_1_sht21_humi();
+void set_box_1_sht21_humi(int value);
 
 /*
  * [/GENERATED]

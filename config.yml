@@ -28,8 +28,10 @@ core_modules:
   - reboot
 
 custom_modules:
+  - box
 
 i2c_devices:
+  - sht21
 
 # This is why I intend to move away from mustache templates
 
@@ -39,6 +41,15 @@ i2c_params:
   - enabled
 
 i2c_loop_i:
+  - 0
+  - 1
+
+box_params:
+  - sht21_temp_c
+  - sht21_temp_f
+  - sht21_humi 
+
+box_loop_i:
   - 0
   - 1
 
@@ -311,3 +322,79 @@ keys:
   #
   # Custom keys
   #
+
+  # Box 0
+
+  - name: box_0_sht21_temp_c
+    caps_name: BOX_0_SHT21_TEMP_C
+    integer: true
+    box:
+      index: 0
+      param: sht21_temp_c
+    nvs:
+      key: B_0_SHT21_C
+    http:
+      noop: true
+    default: -1000000
+
+  - name: box_0_sht21_temp_f
+    caps_name: BOX_0_SHT21_TEMP_F
+    integer: true
+    box:
+      index: 0
+      param: sht21_temp_f
+    nvs:
+      key: B_0_SHT21_F
+    http:
+      noop: true
+    default: -1000000
+
+  - name: box_0_sht21_humi
+    caps_name: BOX_0_SHT21_HUMI
+    integer: true
+    box:
+      index: 0
+      param: sht21_humi
+    nvs:
+      key: B_0_SHT21_HU
+    http:
+      noop: true
+    default: -1000000
+
+    # box 1
+
+  - name: box_1_sht21_temp_c
+    caps_name: BOX_1_SHT21_TEMP_C
+    integer: true
+    box:
+      index: 1
+      param: sht21_temp_c
+    nvs:
+      key: B_1_SHT21_C
+    http:
+      noop: true
+    default: -1000000
+
+  - name: box_1_sht21_temp_f
+    caps_name: BOX_1_SHT21_TEMP_F
+    integer: true
+    box:
+      index: 1
+      param: sht21_temp_f
+    nvs:
+      key: B_1_SHT21_F
+    http:
+      noop: true
+    default: -1000000
+
+  - name: box_1_sht21_humi
+    caps_name: BOX_1_SHT21_HUMI
+    integer: true
+    box:
+      index: 1
+      param: sht21_humi
+    nvs:
+      key: B_1_SHT21_HU
+    http:
+      noop: true
+    default: -1000000

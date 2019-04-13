@@ -36,6 +36,7 @@
 #include "reboot/reboot.h"
 
 // Custom modules
+#include "../box/box.h"
 
 /*
 * [/GENERATED]

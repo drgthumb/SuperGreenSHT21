@@ -89,6 +89,36 @@ const kvi_handler kvi_handlers[] = {
     .handler = internal_set_reboot,
     .getter = get_reboot,
   },
+  {
+    .name = "BOX_0_SHT21_TEMP_C",
+    .handler = NULL,
+    .getter = get_box_0_sht21_temp_c,
+  },
+  {
+    .name = "BOX_0_SHT21_TEMP_F",
+    .handler = NULL,
+    .getter = get_box_0_sht21_temp_f,
+  },
+  {
+    .name = "BOX_0_SHT21_HUMI",
+    .handler = NULL,
+    .getter = get_box_0_sht21_humi,
+  },
+  {
+    .name = "BOX_1_SHT21_TEMP_C",
+    .handler = NULL,
+    .getter = get_box_1_sht21_temp_c,
+  },
+  {
+    .name = "BOX_1_SHT21_TEMP_F",
+    .handler = NULL,
+    .getter = get_box_1_sht21_temp_f,
+  },
+  {
+    .name = "BOX_1_SHT21_HUMI",
+    .handler = NULL,
+    .getter = get_box_1_sht21_humi,
+  },
 
 /*
 * [/GENERATED]

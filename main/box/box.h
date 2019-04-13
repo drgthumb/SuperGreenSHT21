@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018  SuperGreenLab <towelie@supergreenlab.com>
+ * Copyright (C) 2019  SuperGreenLab <towelie@supergreenlab.com>
  * Author: Constantin Clauzel <constantin.clauzel@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,8 +16,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "box/box.h"
+#ifndef BOX_H_
+#define BOX_H_
 
-void init_app() {
-  init_box();
-}
+#include "box_helpers.h"
+
+#define N_BOXES 3
+
+void init_box();
+
+#endif

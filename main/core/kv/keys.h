@@ -45,6 +45,12 @@
 #define I2C_1_SDA "I2C_1_SDA"
 #define I2C_1_SCL "I2C_1_SCL"
 #define I2C_1_ENABLED "I2C_1_E"
+#define BOX_0_SHT21_TEMP_C "B_0_SHT21_C"
+#define BOX_0_SHT21_TEMP_F "B_0_SHT21_F"
+#define BOX_0_SHT21_HUMI "B_0_SHT21_HU"
+#define BOX_1_SHT21_TEMP_C "B_1_SHT21_C"
+#define BOX_1_SHT21_TEMP_F "B_1_SHT21_F"
+#define BOX_1_SHT21_HUMI "B_1_SHT21_HU"
 
 /*
  * [/GENERATED]

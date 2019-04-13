@@ -190,6 +190,48 @@ void internal_set_reboot(int value) {
 
   // TODO: httpd notify
 }
+void internal_set_box_0_sht21_temp_c(int value) {
+  set_box_0_sht21_temp_c(value);
+
+
+
+  // TODO: httpd notify
+}
+void internal_set_box_0_sht21_temp_f(int value) {
+  set_box_0_sht21_temp_f(value);
+
+
+
+  // TODO: httpd notify
+}
+void internal_set_box_0_sht21_humi(int value) {
+  set_box_0_sht21_humi(value);
+
+
+
+  // TODO: httpd notify
+}
+void internal_set_box_1_sht21_temp_c(int value) {
+  set_box_1_sht21_temp_c(value);
+
+
+
+  // TODO: httpd notify
+}
+void internal_set_box_1_sht21_temp_f(int value) {
+  set_box_1_sht21_temp_f(value);
+
+
+
+  // TODO: httpd notify
+}
+void internal_set_box_1_sht21_humi(int value) {
+  set_box_1_sht21_humi(value);
+
+
+
+  // TODO: httpd notify
+}
 
 /*
  * [/GENERATED]

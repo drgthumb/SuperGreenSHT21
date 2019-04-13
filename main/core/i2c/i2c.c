@@ -23,6 +23,7 @@
 #include "../kv/kv.h"
 #include "../log/log.h"
 
+#include "../../sht21/sht21.h"
 
 #define MASTER_TX_BUF_DISABLE  0
 #define MASTER_RX_BUF_DISABLE  0
@@ -56,6 +57,8 @@
 static void loop_devices(int portId) {
   int sda = get_i2c_sda(portId);
   int scl = get_i2c_scl(portId);
+  loop_sht21(portId, sda, scl);
+  vTaskDelay(200 / portTICK_RATE_MS);
 }
 
 void i2c_task(void *param) {
@@ -74,6 +77,7 @@ void i2c_task(void *param) {
 void init_i2c_devices(int portId) {
   int sda = get_i2c_sda(portId);
   int scl = get_i2c_scl(portId);
+  init_sht21(portId, sda, scl);
 }
 
 void init_i2c() {

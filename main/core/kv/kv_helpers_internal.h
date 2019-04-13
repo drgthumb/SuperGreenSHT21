@@ -48,6 +48,12 @@ void internal_set_i2c_1_sda(int value);
 void internal_set_i2c_1_scl(int value);
 void internal_set_i2c_1_enabled(int value);
 void internal_set_reboot(int value);
+void internal_set_box_0_sht21_temp_c(int value);
+void internal_set_box_0_sht21_temp_f(int value);
+void internal_set_box_0_sht21_humi(int value);
+void internal_set_box_1_sht21_temp_c(int value);
+void internal_set_box_1_sht21_temp_f(int value);
+void internal_set_box_1_sht21_humi(int value);
 
 /*
  * [/GENERATED]

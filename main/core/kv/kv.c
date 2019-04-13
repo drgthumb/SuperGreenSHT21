@@ -102,6 +102,18 @@ void preinit_kv() {
   defaulti(I2C_1_SCL, default_i2c_1_scl);
   int default_i2c_1_enabled = 0;
   defaulti(I2C_1_ENABLED, default_i2c_1_enabled);
+  int default_box_0_sht21_temp_c = -1000000;
+  defaulti(BOX_0_SHT21_TEMP_C, default_box_0_sht21_temp_c);
+  int default_box_0_sht21_temp_f = -1000000;
+  defaulti(BOX_0_SHT21_TEMP_F, default_box_0_sht21_temp_f);
+  int default_box_0_sht21_humi = -1000000;
+  defaulti(BOX_0_SHT21_HUMI, default_box_0_sht21_humi);
+  int default_box_1_sht21_temp_c = -1000000;
+  defaulti(BOX_1_SHT21_TEMP_C, default_box_1_sht21_temp_c);
+  int default_box_1_sht21_temp_f = -1000000;
+  defaulti(BOX_1_SHT21_TEMP_F, default_box_1_sht21_temp_f);
+  int default_box_1_sht21_humi = -1000000;
+  defaulti(BOX_1_SHT21_HUMI, default_box_1_sht21_humi);
 
   /*
    * [/GENERATED]
@@ -176,6 +188,18 @@ void reset_defaults() {
   seti(I2C_1_SCL, default_i2c_1_scl);
   int default_i2c_1_enabled = 0;
   seti(I2C_1_ENABLED, default_i2c_1_enabled);
+  int default_box_0_sht21_temp_c = -1000000;
+  seti(BOX_0_SHT21_TEMP_C, default_box_0_sht21_temp_c);
+  int default_box_0_sht21_temp_f = -1000000;
+  seti(BOX_0_SHT21_TEMP_F, default_box_0_sht21_temp_f);
+  int default_box_0_sht21_humi = -1000000;
+  seti(BOX_0_SHT21_HUMI, default_box_0_sht21_humi);
+  int default_box_1_sht21_temp_c = -1000000;
+  seti(BOX_1_SHT21_TEMP_C, default_box_1_sht21_temp_c);
+  int default_box_1_sht21_temp_f = -1000000;
+  seti(BOX_1_SHT21_TEMP_F, default_box_1_sht21_temp_f);
+  int default_box_1_sht21_humi = -1000000;
+  seti(BOX_1_SHT21_HUMI, default_box_1_sht21_humi);
 }
 
 bool hasi(const char * key) {
